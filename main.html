@@ -1,0 +1,57 @@
+<!DOCTYPE HTML>
+<html lang="pl">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Kodowanie fraz za pomocą metody Huffmana. Wyliczanie wartości entropii oraz rysowanie drzewa Huffmana.">
+    <meta name="keywords" content="kodowanie, metoda, Huffman, drzewo, entropia">
+    <meta name="author" content="Adrian Szafrański">
+    <title>Kodowanie Huffmana</title>
+    <link rel="shortcut icon" href="#">
+    
+    <link rel="stylesheet" href="style.css">
+    <script type="module" src="./Service.js"></script>
+</head>
+<body>
+    <div id="header">
+        <div id='title'>
+            Kodowanie Huffmana
+        </div>
+        <div id="phraseTemplate">
+            <div id='titlePhraseTemplate' class = 'partPhraseTemplate'>
+                Przykładowe frazy
+            </div>
+            <div class='partPhraseTemplate'>
+                <button id='phrases1' class="buttonPhrases">Hello world!</button>
+            </div>
+            <div class='partPhraseTemplate'>
+                <button id='phrases2' class="buttonPhrases">Adrian Szafrański</button>
+            </div>
+            <div class='partPhraseTemplate'>
+                <button id='phrases3' class="buttonPhrases">Łamaniec językowy</button>
+            </div>
+            <div style="clear: both"></div> 
+        </div>
+        <div style="clear: both"></div> 
+    </div>
+    <div id="enterPhrase" class="enterPhraseDefault">
+        <div id="text">
+            <textarea id="data" name="data" placeholder="Wpisz frazę do zakodowania" ></textarea>
+        </div>
+        <div id="buttons">
+            <div id='cleanButton'>
+                <button id="cButton" class="textAreaButtons">Wyczyść</button> 
+            </div>
+            <div id='encodeButton'>
+                <button id="eButton" class="textAreaButtons">Oblicz</button>
+            </div>
+            <div style="clear: both"></div> 
+        </div>
+    </div>
+    <div id="basicInformation"></div>
+    <div id="detailedInformation"></div><br />
+    <div id="graphicHuffmanTree">
+        <canvas id="myCanvas">Your browser does not support the canvas element.</canvas>
+    </div> 
+</body>
+</html>
